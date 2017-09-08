@@ -41,7 +41,7 @@
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" onclick="openNav()">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -51,7 +51,7 @@
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 hidden-sm hidden-xs">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active"><a href="#home">Home<span class="sr-only">(current)</span></a></li>
                             <li><a href="#works-area">Service</a></li>
@@ -59,7 +59,8 @@
 <!--                             <li><a href="#our-portfolio">Portfolio</a></li>
                             <li><a href="#our-history">Academic</a></li>
                             <li><a href="#our-feature">Blog</a></li> -->
-                            <li><a href="#">Contact Us</a></li>
+                             <li><a href="#">Clients</a></li>
+                            <li><a href="#">Contact</a></li>
 
                             <div class="contact-number text-right"> 
                                 <ul><li class="">+(91) 484 2340013</li></ul>
@@ -67,6 +68,23 @@
 
                         </ul>
                     </div><!-- /.navbar-collapse -->
+
+                    <div id="mySidenav" class="sidenav">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-print" aria-hidden="true" style="padding-top: 33px;"></i></a>
+                      <li><a href="#works-area"><img id="gklogo-sidenav" src="assets/images/gk-logo.png" alt="" /></a></li>
+                       <li><a href="#work-area">Services</a></li>
+                      <li><a href="#our-team">About</a></li>
+                      <li><a href="#">Clients</a>
+                      <li><a href="#">Contact</a>
+                    </div>
+
+            
+
+                    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<!--                     <div id="main">
+                      ...
+</div> -->
+
                 </div><!-- /.container-fluid -->
             </nav>
         </div>
@@ -762,7 +780,6 @@
 
         <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>
-
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
     </body>

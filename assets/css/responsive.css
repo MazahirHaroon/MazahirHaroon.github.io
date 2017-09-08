@@ -30,13 +30,13 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
         font-size: 80%;
     }
 	.navbar-default {
-    background-color:#ffc038;
+    background-color: transparent;
     border: transparent;
-    padding: 0px 0;
+    padding: 10px 0;
 	}
 	.navbar-default .navbar-toggle {
     border-color:none;
-    background: #464646;
+    background-color: silver;
 	border:0;
 	}
 	.navbar-default .navbar-toggle:hover {
@@ -85,7 +85,10 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
 	    margin-bottom: 7%;
 		}
 	#gklogo{
-		height: 27px;
+		height: 42px;
+	}
+	#gklogo-sidenav{
+		height: 42px;
 	}
    
 }
@@ -106,7 +109,7 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
 	}
 	
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-		background:#ffc038;
+		background: rgb(255,255,255);
 		border:0;
 	}
 	.homepage-style .slider-area {
