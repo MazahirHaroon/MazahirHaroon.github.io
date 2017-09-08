@@ -2,6 +2,8 @@
 
 
 jQuery(document).ready(function ($) {
+    $('.navbar').css('padding-top', '20px');
+    
 	$(window).load(function () {
 		$(".loaded").fadeOut();
 		$(".preloader").delay(1000).fadeOut("slow");
@@ -33,17 +35,20 @@ jQuery(document).ready(function ($) {
 	
 	var windowWidth = $(window).width();
     if (windowWidth > 757) {
-
-        
-          
             $(window).scroll(function () {
-                if ($(this).scrollTop() >200) {
+                if ($(this).scrollTop() > 50) {
                     $('.navbar').fadeIn(200);
+                    $('.navbar').css('padding-top', '0px');
                     $('.navbar').addClass('menu-bg');
+                    $('#bs-example-navbar-collapse-1').css('padding-top', '0px');
+                    $('#gklogo').css('height', '40px');
 
                 } else {
                     
                     $('.navbar').removeClass('menu-bg');
+                     $('#bs-example-navbar-collapse-1').css('padding-top', '13px');
+                     $('#gklogo').css('height', '60px');
+                     $('.navbar').css('padding-top', '20px');
                 }
             });
         

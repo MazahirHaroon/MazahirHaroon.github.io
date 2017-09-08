@@ -24,11 +24,15 @@
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="assets/css/responsive.css" />
 
+        <!--dd css -->
+        <link rel="stylesheet" href="assets/css/dd.css">
+
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <!-- Google fonts -->
+        <!-- Google fonts and icons -->
         <link href="https://fonts.googleapis.com/css?family=Lato:400,900i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Droid+Sans:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body data-spy="scroll" data-target="#main-navbar">
         <!--[if lt IE 8]>
@@ -37,7 +41,7 @@
 		
 		<div class='preloader'><div class='loaded'>&nbsp;</div></div>
         <div id="menubar" class="main-menu">	
-            <nav class="navbar navbar-default navbar-fixed-top">
+            <nav class="navbar navbar-default navbar-fixed-top" id="togglenav">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
@@ -51,20 +55,20 @@
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 hidden-sm hidden-xs">
+                    <div class="collapse navbar-collapse hidden-sm hidden-xs" id="bs-example-navbar-collapse-1" style="padding-top: 13px;">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active"><a href="#home">Home<span class="sr-only">(current)</span></a></li>
                             <li><a href="#works-area">Service</a></li>
-                            <li><a href="#our-team">About</a></li>
-<!--                             <li><a href="#our-portfolio">Portfolio</a></li>
-                            <li><a href="#our-history">Academic</a></li>
-                            <li><a href="#our-feature">Blog</a></li> -->
-                             <li><a href="#">Clients</a></li>
+                            <li><a href="#our-history">About</a></li>
+                            <!-- <li><a href="#our-portfolio">Portfolio</a></li> -->
+                            <!-- <li><a href="#our-history">Academic</a></li> -->
+                             <li><a href="#our-project">Clients</a></li>
+                              <li><a href="#our-supports">Updates</a></li>
                             <li><a href="#">Contact</a></li>
 
-                            <div class="contact-number text-right"> 
+                            <!-- <div class="contact-number text-right"> 
                                 <ul><li class="">+(91) 484 2340013</li></ul>
-                            </div>
+                            </div> -->
 
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -89,7 +93,7 @@
             </nav>
         </div>
         <!--Home page style-->
-        <header id="home" class="sections">
+        <header id="home" class="sections" style="height: 100vh;">
             <div class="container">
 
                 <div class="row">
@@ -100,8 +104,8 @@
                         <div class="col-md-6 col-sm-6 col-xs-12 text-center">
                             <div class="unique-apps">
                                 <h2><span style="color: #0095da">GK</span> <span style="color: black;">Printers</span></h2>
-                                <p>PUTTING YOUR IDEAS TO PRINT</p>
-                                
+                                <p id="headingp">PUTTING YOUR IDEAS TO PRINT</p>
+                                <p>We are a professional printing company based in Kaloor, Cochin.<br/>We want you to be delighted with our printing!<br/>From small to medium or large print runs, your satisfaction is guaranteed.</p>
                                 <div class="home-btn">
                                 <button class="btn btn-primary" style="background-color: #0095da;">Contact Us <span><i class="fa fa-paper-plane"></i></span></button>
                                 <button class="btn btn-primary hidden-sm hidden-xs" style="background-color: #000;">Select Service <span><i class="fa fa-print" aria-hidden="true"></i></span></button>    
@@ -126,19 +130,19 @@
                                     <div class="carousel-inner" role="listbox">
 
                                         <div class="item active">
-                                            <img src="assets/images/slider/brochures.jpg" alt="" />
+                                            <img src="assets/images/slider/brochure.png" alt="" />
                                         </div>
 
                                         <div class="item">
-                                            <img src="assets/images/slider/bussiness_cards.jpg" alt="" />
+                                            <img src="assets/images/slider/catalog.png" alt="" />
                                         </div>
 
                                         <div class="item">
-                                            <img src="assets/images/slider/letterhead.jpg" alt="" />
+                                            <img src="assets/images/slider/wedding.png" alt="" />
                                         </div>
 
                                         <div class="item">
-                                            <img src="assets/images/slider/catalog.jpg" alt="" />
+                                            <img src="assets/images/slider/party.png" alt="" />
                                         </div>
 
                                     </div>
@@ -156,13 +160,14 @@
         </header>
 
         <!-- Sections -->
+        <div id="forbg">
         <section id="our-portfolio" class="sections">
             <div class="container">
 
                 <div class="row">
                     <div class="heading">
                         <div class="title text-center arrow-right">
-                            <h4 class="">WHAT WE DO </h4>
+                            <a href="#our-portfolio"><h4 class="">WE PROVIDE</h4></a>
                             <img class="hidden-xs" src="assets/images/right-arrow.png" alt="" />
 
                         </div>
@@ -173,19 +178,56 @@
 
                     <div class="portfolio-wrap">
 
+                         <div class="slider-area hidden-md hidden-lg">
+
+                                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+
+                                        <div class="item active">
+                                            <img src="assets/images/slider/brochure.png" alt="" />
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="assets/images/slider/catalog.png" alt="" />
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="assets/images/slider/wedding.png" alt="" />
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="assets/images/slider/party.png" alt="" />
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        <div class="hidden-sm hidden-xs">
                         <div class="portfolio">
 
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <img src="assets/images/monitor.png" alt="" />
+                                <img src="assets/images/services/brochure.jpg" alt="" />
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <div class="portfolio-item">
-                                    <h4>WEB DESIGN</h4>
+                                    <h4>BROCHURE</h4>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
                                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est. laboru
                                     </p>
-                                    <button class="btn pt-btn btn-primary">View More</button>
+                                    <button class="btn pt-btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="document.getElementById('services').value='brochure';">Make an Order</button>
                                 </div>
                             </div>
 
@@ -197,17 +239,17 @@
 
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <div class="portfolio-item">
-                                    <h4>SEARCH ENGINE OPTIMIZATION</h4>
+                                    <h4>DANGLERS</h4>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
                                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est. laboru
                                     </p>
-                                    <button class="btn pt-btn btn-primary">View More</button>
+                                    <button class="btn pt-btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="document.getElementById('services').value='dangler';">Make an Order</button>
                                 </div>
                             </div>
 
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <img class="portfolio-img img-responsive" src="assets/images/monitor.png" alt="" />
+                                <img class="portfolio-img img-responsive" src="assets/images/services/dangler.jpg" alt="" />
                             </div>
 
                         </div>
@@ -216,19 +258,113 @@
 
                         <div class="portfolio">
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <img class="portfolio-img img-responsive" src="assets/images/monitor.png" alt="" />
+                                <img class="portfolio-img img-responsive" src="assets/images/services/catalog.jpg" alt="" />
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <div class="portfolio-item">
-                                    <h4>AFFILIATE MARKETING</h4>
+                                    <h4>CATALOGS</h4>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
                                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est. laboru
                                     </p>
-                                    <button class="btn pt-btn btn-primary">View More</button>
+                                    <button class="btn pt-btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="document.getElementById('services').value='catalog';">Make an Order</button>
                                 </div>
                             </div>
                         </div>
+
+
+                        <div class="portfolio">
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="portfolio-item">
+                                    <h4>BUSINESS CARDS</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est. laboru
+                                    </p>
+                                   <button class="btn pt-btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="document.getElementById('services').value='businesscard';">Make an Order</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <img class="portfolio-img img-responsive" src="assets/images/services/business_card.jpg" alt="" />
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="portfolio">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <img class="portfolio-img img-responsive" src="assets/images/services/envelope.jpg" alt="" />
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="portfolio-item">
+                                    <h4>ENVELOPES</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est. laboru
+                                    </p>
+                                    <button class="btn pt-btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="document.getElementById('services').value='envelope';">Make an Order</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio">
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="portfolio-item">
+                                    <h4>LETTERHEADS</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est. laboru
+                                    </p>
+                                   <button class="btn pt-btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="document.getElementById('services').value='letterhead';">Make an Order</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <img class="portfolio-img img-responsive" src="assets/images/services/letterhead.jpg" alt="" />
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="portfolio">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <img class="portfolio-img img-responsive" src="assets/images/services/book.jpg" alt="" />
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="portfolio-item">
+                                    <h4>BOOKS</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est. laboru
+                                    </p>
+                                    <button class="btn pt-btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="document.getElementById('services').value='books';">Make an Order</button>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="portfolio">
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="portfolio-item">
+                                    <h4>STREAMERS</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est. laboru
+                                    </p>
+                                   <button class="btn pt-btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="document.getElementById('services').value='streamer';">Make an Order</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <img class="portfolio-img img-responsive" src="assets/images/services/streamer.png" alt="" />
+                            </div>
+
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -237,7 +373,7 @@
             <!-- /container -->       
         </section>
 
-        <section id="works-area" class="sections">
+      <!--   <section id="works-area" class="sections">
             <div class="container text-center">
 
                 <div class="heading">
@@ -256,113 +392,10 @@
                     </div>
                 </div>	
             </div>
-        </section>
-
-        <section id="our-feature" class="sections">
-            <div class="container">
-                <div class="heading">
-                    <div class="title text-center arrow-left">
-                        <img class="hidden-xs" src="assets/images/left-arrow.png" alt="" />
-
-                        <h4 class="">Our Features</h4>
-                    </div>
-                </div>
-
-                <div class="feature-wrapper">
-                    <div class="row">
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="features-content active"> 
-                                <h4><i class="fa fa-database"></i><span>Visual Composer</span></h4>
-                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="features-content"> 
-                                <h4><i class="fa fa-database"></i><span>Responsive</span></h4>
-                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="features-content"> 
-                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
-                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="features-content"> 
-                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
-                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="features-content"> 
-                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
-                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="features-content"> 
-                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
-                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="features-content"> 
-                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
-                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="features-content"> 
-                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
-                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="features-content"> 
-                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
-                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="features-content"> 
-                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
-                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="features-content"> 
-                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
-                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="features-content"> 
-                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
-                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
-                            </div>
-                        </div>
-                    </div>	
-                </div>		
+        </section> -->
 
 
-            </div>
-
-
-        </section>
-
+<!-- 
         <section id="our-package" class="sections lightbg">
             <div class="container">
 
@@ -384,7 +417,7 @@
                                 <h5>Basic</h5>
 
                                 <ul>
-                                    <li>5 web sites</li>
+                                    <li>100 Bus</li>
                                     <li>5 e-mails</li>
                                     <li>5 MySQL databases</li>
                                     <li>5 MySQL databases</li>
@@ -392,7 +425,7 @@
                                 </ul>
 
                                 <div class="package-bottom-area">
-                                    <h3>$5/<span>mo.</span></h3>
+                                    <h3>₹5/<span>mo.</span></h3>
                                 </div>
 
                                 <div class="pkg-btn"><a href="" class="btn btn-primary">ORDER NOW</a></div>
@@ -416,7 +449,7 @@
                                 </ul>
 
                                 <div class="package-bottom-area">
-                                    <h3>$12<span>/mo.</span></h3>
+                                    <h3>₹12<span>/mo.</span></h3>
                                 </div>
 
                                 <div class="pkg-btn"><a href="" class="btn btn-primary">ORDER NOW</a></div>
@@ -440,7 +473,7 @@
                                 </ul>
 
                                 <div class="package-bottom-area">
-                                    <h3>$19<span>/mo.</span></h3>
+                                    <h3>₹19<span>/mo.</span></h3>
                                 </div>
 
                                 <div class="pkg-btn"><a href="" class="btn btn-primary">ORDER NOW</a></div>
@@ -455,7 +488,7 @@
 
                 </div>
             </div>	
-        </section>
+        </section> -->
 
         <section id="our-history" class="sections">
             <div class="container">
@@ -475,7 +508,7 @@
                         <div class="col-md-6 col-sm-12 col-xs-12">
                             <div class="history-wrapper">
                                 <div class="history-heading"> 
-                                    <h5 class="our-history">Our History</h5>
+                                    <h5 class="our-history">Our Story</h5>
                                 </div>
 
                                 <div class="history-content">
@@ -488,9 +521,6 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
                                         consequat.
                                     </p>
-
-                                    <div class="hst-btn"><button class="btn btn-primary">BROWSE OUR HISTORY</button></div>
-
                                 </div>
                             </div>
                         </div>
@@ -499,13 +529,118 @@
             </div>
         </section>
 
+                <section id="our-feature" class="sections">
+            <div class="container">
+                <div class="heading">
+                    <div class="title text-center arrow-left">
+                        <img class="hidden-xs" src="assets/images/left-arrow.png" alt="" />
+
+                        <h4 class="">Why Choose Us</h4>
+                    </div>
+                </div>
+
+                <div class="feature-wrapper">
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="features-content"> 
+                                <h4><i class="fa fa-building-o" aria-hidden="true"></i><span>Production</span></h4>
+                                <p>Our award winning technology backed by the most innovative infrastructure on both pre-press and post-press processing ensures your products are delivered to the mark!</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="features-content"> 
+                                <h4><i class="fa fa-print" aria-hidden="true"></i><span>Post Press</span></h4>
+                                <p>Creasing, Perforation, Glossy or Matte Lamination, Perfect Binding, Hot Stamping...You name it, we have it.Our post press division with skilled workforce can make sure you get it right each time.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="features-content"> 
+                                <h4><i class="fa fa-shield" aria-hidden="true"></i><span>Quality of Service</span></h4>
+                                <p>We offer high quality printing and supply on 4 Colour Komori Offset printing press and produce high quality, vibrant marketing collaterals for your daily business needs.</p>
+                            </div>
+                        </div>
+<!-- 
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="features-content"> 
+                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
+                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="features-content"> 
+                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
+                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="features-content"> 
+                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
+                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="features-content"> 
+                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
+                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="features-content"> 
+                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
+                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="features-content"> 
+                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
+                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="features-content"> 
+                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
+                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="features-content"> 
+                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
+                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="features-content"> 
+                                <h4><i class="fa fa-database"></i><span>Retina Ready</span></h4>
+                                <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla</p>
+                            </div>
+                        </div> -->
+                    </div>  
+                </div>      
+
+
+            </div>
+
+
+        </section>
+
         <section id="our-project" class="sections">
             <div class="container">
 
                 <div class="heading">
                     <div class="title text-center arrow-left">
 
-                        <h4 class="">Our Business Project</h4>
+                        <h4 class="">Our Business Clinets</h4>
                         <img class="hidden-xs" src="assets/images/right-arrow.png" alt="" />
                     </div>
                 </div>
@@ -585,7 +720,7 @@
                     <div class="title text-center arrow-left">
                         <img class="hidden-xs" src="assets/images/left-arrow.png" alt="" />
 
-                        <h4 class="">Our Team Members</h4>
+                        <h4 class="">THE GK Team</h4>
                     </div>
                 </div>
             </div>
@@ -599,16 +734,16 @@
                             <div class="team-member">
 
                                 <img class="img-circle" src="assets/images/team/1.png" alt="" />
-                                <h5>SAYED MIRAJ</h5>
-                                <p>UI & UX DESIGNER</p>
+                                <h5>Gopala Krishnan</h5>
+                                <p>CEO</p>
                             </div>
                         </div>
 
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="team-member">
-                                <img class="img-circle" src="assets/images/team/2.png" alt="" />
-                                <h5>PENNY HUSTON</h5>
-                                <p>DEVELOPER</p>
+                                <img class="img-circle" src="assets/images/team/1.png" alt="" />
+                                <h5>ARJUN</h5>
+                                <p>MAnager</p>
                             </div>
                         </div>
 
@@ -640,7 +775,7 @@
                 <div class="heading">
                     <div class="title text-center arrow-left">
 
-                        <h4 class="">Updates & Support</h4>
+                        <h4 class="">News form GK</h4>
                         <img class="hidden-xs" src="assets/images/right-arrow.png" alt="" />
                     </div>
                 </div>
@@ -655,7 +790,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
                                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est. laboru
                             </p>
-                            <div class="spt-btn"><button class="btn btn-primary">SUPPORT CENTER</button></div>
+                            <div class="spt-btn"><button class="btn btn-primary">Read More</button></div>
                         </div>
                     </div>
 
@@ -680,8 +815,9 @@
                             <div class="img-overlay">
 
                                 <div class="creative-works">
-                                    <h3>NEED CREATIVE WORKERS?</h3>
-                                    <button class="btn hire-btn btn-primary">HIRE US</button>
+                                    <h3>HAVE SOMETHING TO PRINT?</h3>
+                                    <!-- <button class="btn hire-btn btn-primary">Tell Us!</button> -->
+                                    <button type="button" class="btn hire-btn btn-primary" data-toggle="modal" data-target="#myModal">Tell Us!</button>
                                 </div>
 
                             </div>
@@ -694,6 +830,87 @@
             </div> <!-- /container -->  
 
         </section>
+</div>
+
+<!-- Trigger the modal with a button -->
+<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title text-center">Contact Us</h4>
+      </div>
+      <div class="modal-body">
+       <!-- <div class="col-lg-6 col-md-6 col-sm-12"> -->
+                        <form id="contactform">
+                            <div class="row">
+                                <div class="input-group margin-bottom-sm">
+                                    <span class="input-group-addon"><i class="material-icons">person_pin</i></span>
+                                    <input class="form-control" type="text" name="cname" placeholder="Name" style="height: 40px;">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <br>
+                                <div class="input-group margin-bottom-sm">
+                                    <span class="input-group-addon"><i class="material-icons">email</i></span>
+                                    <input class="form-control" type="email" name="cemail" placeholder="Email address" style="height: 40px;">
+                                </div>
+                            </div>
+                            <div class="row">
+                            <br>
+                            <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+                            <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+                                                    
+                                <div style="color: white; font-weight: bolder;"> With Reference to :
+
+                            <span class="custom-dropdown big">
+                                <select id="services" name="events" required>    
+                                    <option value="brochure">Brochures</option>
+                                        <option value="dangler">Danglers</option>
+                                        <option value="catalog">Catalogs</option>
+                                        <option value="streamer">Streamers</option>
+                                        <option value="businesscard">Business Cards</option>
+                                        <option value="letterhead">Letterheads</option>
+                                        <option value="envelope">Envelopes</option>
+                                        <option value="books">Books</option>
+                                </select>
+                            </span>
+                            </div>
+                            </div>
+                            <div class="row">
+                                <br>
+                                <div class="input-group margin-bottom-sm">
+                                    <span class="input-group-addon"><i class="material-icons">message</i></span>
+                                    <textarea class="form-control" id="comments" name="comments" placeholder="Your Query.." rows="5"></textarea>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="modal-footer">
+                                    <button class="btn btn-primary pull-right" id="sendmail" data-dismiss="modal" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                              </div>
+                              <!--  <div class="row">
+                                <div id="success" class="hide">
+                                <div class="alert alert-success alert-dismissable">
+                                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                <strong>Success!</strong> Your Query has been sent!.
+                                </div>
+                                </div>
+                            </div> -->
+                            </div>
+                        </form>
+      </div>
+     <!--  <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+
+  </div>
+</div>
 
         <div class="scroll-top">
 
