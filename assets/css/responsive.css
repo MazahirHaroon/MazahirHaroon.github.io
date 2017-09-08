@@ -32,7 +32,7 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
 	.navbar-default {
     background-color:#ffc038;
     border: transparent;
-    padding:20px 0;
+    padding: 0px 0;
 	}
 	.navbar-default .navbar-toggle {
     border-color:none;
@@ -66,8 +66,27 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
 	.homepage-style .slider-area {
     margin-top: 30px;
 	}
-	
-	
+
+/*custom added*/
+	#home p{
+    display: none;
+	}
+	#home h2 {
+		font-size: 20px;
+	  	margin-bottom: 0rem;
+	}
+	.unique-apps .home-btn button{
+    	border: 4px solid #FFF;
+	    display: inline-block;
+	    padding: 3px 3px 3px 3px;
+	    font-size: 17px;
+	    color: white;
+	    font-family: 'Lato', sans-serif;
+	    margin-bottom: 7%;
+		}
+	#gklogo{
+		height: 27px;
+	}
    
 }
 
@@ -121,3 +140,10 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
 	
 }
 
+/*Desktop Screen*/
+@media (min-width: 1200px) {
+	.unique-apps {
+		margin-top: 58px;
+	}
+
+}
