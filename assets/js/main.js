@@ -131,3 +131,9 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+//Client Carousel
+// Instantiate the Bootstrap carousel
+$('#myCarousel').carousel({
+  interval: 3000
+});
