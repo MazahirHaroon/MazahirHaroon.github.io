@@ -220,8 +220,8 @@ Section
 */
 @media (max-width: 767px) {
 .sections {
-    padding-top:125px;
-    padding-bottom:100px;
+    padding-top:20px;
+    padding-bottom:20px;
     position: relative;
     overflow: hidden;
 }
@@ -696,6 +696,24 @@ input:-ms-input-placeholder {
     color:#fff;
 }
 
+@media (max-width: 767px) {
+    #home-desktop{
+        display: none;
+    }
+    #home-mobile-btn{
+       /* position: absolute;*/
+        top: 50%;
+    }
+    .home-mobile-wrapper{
+        text-align: center;
+    }
+}
+@media (min-width: 767px) {
+    #home-mobile{
+        display: none;
+    }
+}
+
 #gklogo{
 height: 60px;
 }
@@ -714,10 +732,16 @@ height: 60px;
     -o-background-size: cover;
     background-size: cover;
 }
+@media (max-width: 767px) {
 .homepage-style{
+    padding-top:100px;
+}
+}
+@media (min-width: 768px) {
+  .homepage-style{
     padding-top:0px;
 }
-
+ }
 .homepage-style .top-arrow img{
     margin-top:100px;
 }
@@ -740,11 +764,34 @@ height: 60px;
     color: #FFF;
     line-height: 40px;
 }
+#headingp-small {
+text-shadow: 2px 2px 3px #424242;
+font-size: 18px;
+}
+#headingp-mobile {
+    font-size: 35px;
+    font-weight: 500;
+    text-transform:uppercase;
+    font-family: 'Droid Sans', sans-serif;
+    color: #FFF;
+    line-height: 40px;
+    margin-top: 15px;
+}
+#headingp-mobile-small {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform:uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFF;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
 .homepage-style .slider-area{
 
 }
 .carousel-indicators {
-    bottom:-50px;
+    bottom:0px;
 }
 .carousel-indicators li {
     background:#0095da;
@@ -1215,7 +1262,7 @@ height: 60px;
     cursor:pointer;
 }
 .scrollup:hover{
-    background: #de9800;
+    background: #004565;
     color: #fff;
     transform:scale(1.1);
 }	
